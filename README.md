@@ -1,4 +1,4 @@
-![NUC9](./ScreenShots/NUC9.png)
+![NUC9](./ScreenShots/NUC9.jpg)
 ## 电脑配置
 
 |   规格    |                    详细信息                     |
@@ -17,6 +17,9 @@
 
 ## 更新日志
 
+- 8-11-2023
+  - 更新 `OpenCore` `v0.9.4`
+  
 - 7-31-2023
   - 第一次提交
 
@@ -49,3 +52,5 @@
 ![NUC9_SysInfo_06](./ScreenShots/NUC9_SysInfo_06.png)
 
 ![NUC9_SysInfo_07](./ScreenShots/NUC9_SysInfo_07.png)
+
+![NUC9-Sensei](./ScreenShots/NUC9_6600XT.png)
