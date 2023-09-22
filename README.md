@@ -29,7 +29,7 @@
 
 ## 截屏
 
-![Intel-NUC9-ScreenShots](./ScreenShots/NUC9_Sonama.png)
+![Intel-NUC9-ScreenShots](./ScreenShots/NUC9_RV100.png)
 
 ![OpenCore](./ScreenShots/OpenCore.png)
 
