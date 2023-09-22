@@ -17,17 +17,19 @@
 
 ## 更新日志
 
+- 9-22-2023
+  - 更新 `OpenCore` `v0.9.5`
+  - 支持 `Sonama` 安装使用
+  - 适配 `BCM94360Z3`
+  
 - 8-11-2023
   - 更新 `OpenCore` `v0.9.4`
-  
 - 7-31-2023
   - 第一次提交
 
 ## 截屏
 
-![Intel-NUC9-ScreenShots](./ScreenShots/Intel-NUC9-ScreenShots.png)
-
-![Intel-NUC9-iTerm](./ScreenShots/Intel-NUC9-iTerm.png)
+![Intel-NUC9-ScreenShots](./ScreenShots/NUC9_Sonama.png)
 
 ![OpenCore](./ScreenShots/OpenCore.png)
 
