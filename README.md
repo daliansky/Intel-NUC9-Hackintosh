@@ -1,4 +1,5 @@
-![NUC9](./ScreenShots/NUC9.jpg)
+[![NUC9](./ScreenShots/NUC9_taobao.png)](https://item.taobao.com/item.htm?id=732931461537)
+
 ## 电脑配置
 
 |   规格    |                    详细信息                     |
@@ -17,11 +18,14 @@
 
 ## 更新日志
 
+- 3-12-2024
+  - 更新 `OpenCore` `v0.9.9`
+  - 更新 `I219-LM` 驱动
+  
 - 9-22-2023
   - 更新 `OpenCore` `v0.9.5`
   - 支持 `Sonama` 安装使用
   - 适配 `BCM94360Z3`
-  
 - 8-11-2023
   - 更新 `OpenCore` `v0.9.4`
 - 7-31-2023
