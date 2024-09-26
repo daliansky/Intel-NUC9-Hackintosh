@@ -18,12 +18,17 @@
 
 ## 更新日志
 
+- 9-26-2024
+  - 更新 `OpenCore` `v1.0.1`
+  
+  - 支持 `Sequoia`
+  
 - 3-12-2024
   - 更新 `OpenCore` `v0.9.9`
   - 更新 `I219-LM` 驱动
   - 更新 `IOSkywalkFamily.kext` 到 `v1.1.0`
   - `Sonoma` 如果想更新到 `14.4` 请务必先更新 `EFI` ，然后再安装 [OCLP](https://pan.daliansky.net/APPS/OCLP/OCLP.md)，重启后，再升级到 `14.4` 否则会出现 `WIFI` 无法启用的问题
-  
+
 - 9-22-2023
   - 更新 `OpenCore` `v0.9.5`
   - 支持 `Sonama` 安装使用
@@ -35,7 +40,7 @@
 
 ## 截屏
 
-![Intel-NUC9-ScreenShots](./ScreenShots/NUC9_RV100.png)
+![Intel-NUC9-ScreenShots](./ScreenShots/Intel-NUC9_for_Sequoia.png)
 
 ![OpenCore](./ScreenShots/OpenCore.png)
 
