@@ -3,11 +3,11 @@
 <plist version="1.0">
     <dict>
         <key>#Build Date</key>
-        <string>11-4-2023</string>
+        <string>9-26-2024</string>
         <key>#Maker by</key>
-        <string>Intel NUC9</string>
+        <string>GEEKOM MiniFun9</string>
         <key>#OpenCore Version</key>
-        <string>v0.9.5 Release</string>
+        <string>1.0.1 Release</string>
         <key>#Posted on</key>
         <string>黑果小兵的部落阁 https://blog.daliansky.net</string>
         <key>ACPI</key>
@@ -74,25 +74,9 @@
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-THUNDERBOLT-3.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
                     <true/>
                     <key>Path</key>
                     <string>NUC9-SSDT-TB3-HackinDROM.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-SBUS-MCHC.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -321,17 +305,6 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>#PciRoot(0x0)/Pci(0x1D,0x5)/Pci(0x0,0x0)</key>
-                <dict>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,29,5/0,0</string>
-                    <key>device-id</key>
-                    <data>MxU=</data>
-                    <key>device_type</key>
-                    <string>Ethernet controller</string>
-                    <key>model</key>
-                    <string>I210 Gigabit Network Connection</string>
-                </dict>
                 <key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>PP_PhmSoftPowerPlayTable</key>
@@ -358,8 +331,10 @@
                 <dict>
                     <key>#核显配合独显加速使用（AAPL,ig-platform-id）</key>
                     <data>AwCRPg==</data>
-                    <key>AAPL,ig-platform-id</key>
+                    <key>#核显驱动AAPL,ig-platform-id</key>
                     <data>BwCbPg==</data>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>AwCRPg==</data>
                     <key>device-id</key>
                     <data>mz4AAA==</data>
                     <key>enable-hdmi20</key>
@@ -395,7 +370,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.9</string>
+                    <string>V1.7.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -485,7 +460,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.9.2</string>
+                    <string>V1.9.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -591,6 +566,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>AirportItlwm_for_Sequoia.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string>24.0.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
                     <string>V2.6.9</string>
@@ -645,13 +638,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>AppleIntelI210Ethernet.kext</string>
+                    <string>IntelMausiEthernet.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.1</string>
+                    <string>V2.5.4 | I219LM7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleIntelI210Ethernet</string>
+                    <string>Contents/MacOS/IntelMausiEthernet</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -663,13 +656,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>IntelMausiEthernet.kext</string>
+                    <string>SimpleGBE.kext</string>
                     <key>Comment</key>
-                    <string>V2.5.4</string>
+                    <string>V1.0.1 | I210 EtherNet</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelMausiEthernet</string>
+                    <string>Contents/MacOS/SimpleGBE</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -719,7 +712,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.8</string>
+                    <string>V1.6.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -818,24 +811,6 @@
                     <string>23.9.99</string>
                     <key>MinKernel</key>
                     <string>23.4.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AirportItlwm_for_Sequoia.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>24.0.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -964,7 +939,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>DalianSky/NUC</string>
+                <string>DalianSky\NUC</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
@@ -1184,13 +1159,13 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C020445014NLNV91M</string>
+                <string>C02040301J9LNV9AD</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>21nezhoQ</data>
+                <data>es83C6AZ</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -1198,9 +1173,9 @@
                 <key>SystemProductName</key>
                 <string>iMac19,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02DM08BJV3Q</string>
+                <string>C02DH026JV3Q</string>
                 <key>SystemUUID</key>
-                <string>1416A7D8-5F79-4CDC-9936-834257947567</string>
+                <string>DBB76795-6527-4120-BA79-EF2A5C1B3BD3</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1220,15 +1195,15 @@
                 <key>EnableJumpstart</key>
                 <true/>
                 <key>GlobalConnect</key>
-                <false/>
+                <true/>
                 <key>HideVerbose</key>
                 <true/>
                 <key>JumpstartHotPlug</key>
                 <false/>
                 <key>MinDate</key>
-                <integer>0</integer>
+                <integer>-1</integer>
                 <key>MinVersion</key>
-                <integer>0</integer>
+                <integer>-1</integer>
             </dict>
             <key>AppleInput</key>
             <dict>
@@ -1546,6 +1521,8 @@
                     <string>RuntimeCode</string>
                 </dict>
             </array>
+            <key>Unload</key>
+            <array/>
         </dict>
     </dict>
 </plist>
